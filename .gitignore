@@ -1,0 +1,17 @@
+# SQLite WAL companion files — transient, never commit
+*.db-shm
+*.db-wal
+
+# Local-only merged index — rebuilt from facts-*.db on every pull
+merged_index.db
+
+# Generated dashboard — regenerate with `team-memory dashboard`
+dashboard.html
+
+# Extraction state — local to each developer
+processed-sessions.json
+processed-slack-threads.json
+
+# Opt-in registry + Slack queue — machine-specific, never commit
+opted-in-projects.json
+slack-queue.json
